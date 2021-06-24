@@ -12,7 +12,7 @@ Rest service to get Github trending repositories by language used.
 - Spring Rest 
 - Intellij Idea.
 
-Download project from github to your local repository and lunch it from your IDE
+Download project from github : https://github.com/MedFli/gemography.git to your local repository and lunch it from your IDE
 
 you can run the app on : http:localhost:8080/repositories/:{language}
 

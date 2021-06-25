@@ -20,6 +20,8 @@ you can run the app on : http:localhost:8080/repositories/:{language}
 
 Don't forget to set the language in our URL to sort repositories (first letter upeer) ex : Java, C++, ...
 
+when testing if you have compilation issues , don't forget to fix Java sdk version 
+
 Developed by M.A.F , 2021 for Gemograpgy
 
 

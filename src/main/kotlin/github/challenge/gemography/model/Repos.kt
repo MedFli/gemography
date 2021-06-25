@@ -16,7 +16,7 @@ data class Repos(
     @JsonProperty("name")
     val name: String?,
     @JsonProperty("createAt")
-    val createAt: String,
+    val createAt: String?,
     @JsonProperty("language")
     var languageUsed: String?,
     @JsonProperty("description")

@@ -10,6 +10,8 @@ Rest service to get Github trending repositories by language used.
 - SpringBoot
 - Kotlin
 - Spring Rest 
+- Junit5
+- Mockito
 - Intellij Idea.
 
 Download project from github : https://github.com/MedFli/gemography.git to your local repository and lunch it from your IDE

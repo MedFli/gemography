@@ -7,8 +7,10 @@ Rest service to get Github trending repositories by language used.
 *********************************
 
 
-- SpringBoot
+
 - Kotlin
+- Java 1.8
+- SpringBoot
 - Spring Rest 
 - Junit5
 - Mockito

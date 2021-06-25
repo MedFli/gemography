@@ -23,6 +23,7 @@ _Don't forget to set the language in our URL to sort repositories (first letter 
 _when testing if you have compilation issues , don't forget to fix Java sdk version 
 
 *******************************************
-Developed by M.A.F , 2021 for Gemograpgy
+Developed by M.A.F , 2021 for Gemograpgy . 
+For all queries please contact @ flissate.amine@gmail.com
 
 

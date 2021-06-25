@@ -15,9 +15,6 @@ import org.springframework.http.MediaType
 import org.springframework.test.web.servlet.MockMvc
 import org.springframework.test.web.servlet.request.MockMvcRequestBuilders
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers
-import java.time.format.DateTimeFormatter
-
-import java.time.LocalDateTime
 
 @WebMvcTest(RepoController::class)
 class RepoControllerTest {
@@ -27,9 +24,6 @@ class RepoControllerTest {
     @Autowired
     lateinit var reposService: ReposService
 
-    val now = LocalDateTime.now()
-    val formatter = DateTimeFormatter.ofPattern("yyyy-MM-dd HH:mm:ss")
-    val formattedDate = now.format(formatter)
     val REPO_ENDPOINT = "/repositories/{language}"
 
     @Test
@@ -41,7 +35,6 @@ class RepoControllerTest {
                     id = 12345,
                     name = "junior",
                     languageUsed = "kotlin",
-                    createAt = formattedDate,
                     owner = Owner(
                         id = 99999,
                         login = "junior"
@@ -51,7 +44,6 @@ class RepoControllerTest {
                     id = 12346,
                     name = "Jadamine",
                     languageUsed = "Java",
-                    createAt = formattedDate,
                     owner = Owner(
                         id = 88888,
                         login = "jadamine"

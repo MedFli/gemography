@@ -15,11 +15,9 @@ class ReposService(
 ) {
     private val logger = loggerFor(this::class.java)
 
-    val BASE_URL = "https://api.github.com/search/repositories?q=created&sort=star&order=desc"
-
     fun importRepositoriesJson(language: String): List<Repos>? {
         val response = restTemplate.exchange(
-            BASE_URL,
+            URL,
             HttpMethod.GET,
             null,
             ListRepos::class.java
@@ -37,5 +35,9 @@ class ReposService(
         return listReturned.also {
             logger.info("fetching data completed , this language was used by $counter Repositories")
         }
+    }
+
+    companion object {
+        val URL = "https://api.github.com/search/repositories?q=created&sort=star&order=desc"
     }
 }

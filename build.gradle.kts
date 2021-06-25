@@ -24,6 +24,11 @@ dependencies {
 	implementation("org.springframework.boot:spring-boot-starter-data-jdbc")
 	runtimeOnly("com.h2database:h2")
 	testImplementation("org.springframework.boot:spring-boot-starter-test")
+	testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine")
+	testImplementation("org.junit.jupiter:junit-jupiter:5.4.2")
+	testImplementation("org.junit.jupiter:junit-jupiter-api")
+	testImplementation("io.mockk:mockk:1.9.3")
+
 }
 
 tasks.withType<KotlinCompile> {

@@ -24,6 +24,6 @@ class RepoController(
     ): ResponseEntity<List<Repos>> {
         logger.info("Incoming request to get all repositories in github open Api")
         val repositories = reposService.importRepositoriesJson(language)
-        return ResponseEntity(repositories, HttpStatus.ACCEPTED)
+        return ResponseEntity(repositories, HttpStatus.OK)
     }
 }
